@@ -30,7 +30,6 @@ body {
     line-height: 1.5;
 }
 
-
 /* =========================
    HEADER
 ========================= */
@@ -49,6 +48,21 @@ header h1 {
     color: var(--branco);
 }
 
+.header-image {
+    width: 45%;
+    height: 200px;
+
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.header-image img {
+    width: 50%;
+    height: 50%;
+
+    object-fit: cover;
+    display: block;
+}
 nav {
     display: flex;
     gap: 25px;
@@ -125,6 +139,829 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+#segment {
+    background: var(--cinza-claro);
+
+    text-align: center;
+}
+
+#segment > p {
+    margin-bottom: 20px;
+}
+
+/* =========================
+   SOBRE
+========================= */
+
+#information{
+    padding: 100px 60px;
+    text-align: center;
+}
+.information-header span {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.information-header h2 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.information-header p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+#processo {
+    padding: 100px 60px;
+    text-align: center;
+}
+
+.processo-header span {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.processo-header h2 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.processo-header p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.equipamentos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.equipamento {
+    width: 180px;
+    height: 150px;
+
+    border: 1px solid #ddd;
+    border-radius: 15px;
+
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.equipamento:hover {
+    transform: translateY(-6px);
+}
+
+.equipamento-icon {
+    font-size: 40px;
+}
+
+.equipamento span:last-child {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#processo-display {
+    max-width: 700px;
+    min-height: 250px;
+
+    margin: 50px auto 0;
+
+    padding: 40px;
+
+    border: 1px solid #ddd;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.processo-placeholder span {
+    font-size: 40px;
+}
+
+.processo-placeholder h3 {
+    font-size: 24px;
+    margin: 15px 0 10px;
+}
+
+.processo-placeholder p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.processo-etapa {
+    text-align: center;
+
+    animation: aparecerEtapa 0.5s ease;
+}
+
+@keyframes aparecerEtapa {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.progresso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 35px;
+}
+
+.ponto {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background: #ddd;
+
+    transition: 0.3s;
+}
+
+.ponto.ativo {
+    background: #087f5b;
+
+    transform: scale(1.3);
+}
+
+.linha {
+    width: 60px;
+    height: 2px;
+
+    background: #ddd;
+}
+
+.equipamento-selecionado {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+
+    opacity: 0.8;
+}
+
+.equipamento-selecionado strong {
+    font-weight: bold;
+}
+
+.diferenciais {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.diferenciais h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.diferenciais-intro {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 17px;
+}
+
+.diferenciais-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.diferencial-card {
+    width: 230px;
+    min-height: 260px;
+
+    padding: 30px 25px;
+
+    border: 1px solid #ddd;
+    border-radius: 15px;
+
+    background: white;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.diferencial-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.diferencial-icon {
+    display: block;
+
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+.diferencial-card h3 {
+    margin-bottom: 15px;
+
+    font-size: 19px;
+}
+
+.diferencial-card p {
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.futuro {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.futuro h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.futuro-conteudo {
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 50px;
+}
+
+.futuro-texto {
+    max-width: 550px;
+
+    text-align: left;
+}
+
+.futuro-texto h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.futuro-texto p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.futuro-destaque {
+    width: 220px;
+    min-height: 180px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    border: 1px solid #ddd;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.futuro-destaque:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.futuro-destaque span {
+    font-size: 45px;
+}
+
+.futuro-destaque strong {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.sobre-final {
+    padding: 70px 20px;
+
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+.sobre-final h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.sobre-final p {
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    line-height: 1.6;
+}
+
+.btn-final {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #087f5b;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-final:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* ============================= */
+/*        SERVIÇOS - INTRO        */
+/* ============================= */
+
+.servicos-intro {
+    padding: 80px 60px 60px;
+    text-align: center;
+}
+
+.servicos-intro h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.servicos-intro p {
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.servicos-horario {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.servicos-horario div {
+    width: 250px;
+    padding: 20px;
+
+    border: 1px solid #ddd;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    transition: 0.3s;
+}
+
+.servicos-horario div:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.servicos-horario strong {
+    font-size: 16px;
+}
+
+.servicos-horario span {
+    font-size: 14px;
+}
+
+
+/* ============================= */
+/*        CALENDÁRIO              */
+/* ============================= */
+
+.calendario {
+    padding: 60px;
+    text-align: center;
+}
+
+.calendario h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.calendario > p {
+    margin-bottom: 35px;
+}
+
+.tabela-container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    overflow-x: auto;
+
+    border-radius: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    background: white;
+}
+
+th,
+td {
+    padding: 18px 15px;
+
+    border-bottom: 1px solid #ddd;
+
+    text-align: left;
+}
+
+th {
+    font-size: 14px;
+}
+
+td {
+    font-size: 14px;
+}
+
+tbody tr {
+    transition: 0.2s;
+}
+
+tbody tr:hover {
+    transform: scale(1.01);
+}
+
+
+/* ============================= */
+/*       SOLICITAR COLETA         */
+/* ============================= */
+
+.solicitar-coleta {
+    max-width: 850px;
+
+    margin: 50px auto;
+
+    padding: 50px 40px;
+
+    text-align: center;
+
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.solicitar-coleta h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.solicitar-coleta p {
+    max-width: 600px;
+
+    margin: 0 auto 25px;
+
+    line-height: 1.6;
+}
+
+.btn-coleta {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #087f5b;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-coleta:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ============================= */
+/*           ATENÇÃO              */
+/* ============================= */
+
+.aviso-coleta {
+    max-width: 850px;
+
+    margin: 30px auto;
+
+    padding: 25px 30px;
+
+    border-left: 4px solid #087f5b;
+
+    background: #f7f7f7;
+
+    border-radius: 8px;
+}
+
+.aviso-coleta h2 {
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+.aviso-coleta p {
+    line-height: 1.6;
+}
+
+/* ============================= */
+/*        CHAMADA FINAL           */
+/* ============================= */
+
+.servicos-final {
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+.servicos-final h2 {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.servicos-final p {
+    font-size: 17px;
+}
+
+/* ============================= */
+/*          CONTATO              */
+/* ============================= */
+
+.contato-intro {
+    padding: 80px 60px 50px;
+    text-align: center;
+}
+
+.contato-intro h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contato-intro p {
+    max-width: 700px;
+    margin: 0 auto;
+
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* ============================= */
+/*      INFORMAÇÕES              */
+/* ============================= */
+
+.contato-informacoes {
+    max-width: 1100px;
+
+    margin: 20px auto 60px;
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.contato-card {
+    width: 210px;
+
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border: 1px solid #ddd;
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.contato-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.contato-card span {
+    display: block;
+
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.contato-card h2 {
+    font-size: 18px;
+
+    margin-bottom: 10px;
+}
+
+.contato-card p {
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+
+/* ============================= */
+/*        FORMULÁRIO              */
+/* ============================= */
+
+.contato-formulario {
+    max-width: 750px;
+
+    margin: 0 auto 70px;
+    padding: 45px;
+
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.formulario-texto {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.formulario-texto h2 {
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.formulario-texto p {
+    line-height: 1.6;
+}
+
+
+.contato-formulario form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.contato-formulario label {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-top: 8px;
+}
+
+.contato-formulario input,
+.contato-formulario select,
+.contato-formulario textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+.contato-formulario input:focus,
+.contato-formulario select:focus,
+.contato-formulario textarea:focus {
+    border-color: #087f5b;
+}
+
+.contato-formulario textarea {
+    resize: vertical;
+}
+
+.contato-formulario button {
+    margin-top: 15px;
+
+    padding: 14px 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #087f5b;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contato-formulario button:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ============================= */
+/*        CHAMADA FINAL           */
+/* ============================= */
+
+.contato-final {
+    padding: 70px 20px;
+
+    text-align: center;
+}
+
+.contato-final h2 {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+.contato-final p {
+    font-size: 17px;
+
+    margin-bottom: 25px;
+}
+
+.contato-final a {
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #087f5b;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.contato-final a:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
 
 /* =========================
    BOTÕES
@@ -279,6 +1116,25 @@ footer h3 {
     margin-bottom: 10px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+.footer-logo {
+    width: 120px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+}   
+
 /* =========================
    RESPONSIVIDADE
 ========================= */
@@ -361,7 +1217,7 @@ footer h3 {
         letter-spacing: 1px;
     }
 
-    .hero-subtitle {
+    .sobre-subtitle{
         display: block;
 
         margin-bottom: 15px;

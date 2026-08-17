@@ -21,31 +21,184 @@
 
     <main>
 
-        <section>
-            
-            <h2>Entre em Contato</h2>
+        <section class="contato-intro">
+
+            <h1>Entre em contato com a EcoTech</h1>
 
             <p>
-                Entre em contato conosco para saber mais sobre
-                nossos serviços e parcerias.
-            </p>
-
-            <p>
-                Email: contato@ecotech.com
-            </p>
-
-            <p>
-                Telefone: (00) 00000-0000
-            </p>
-
-            <p>
-                Instagram: @ecotech
+                Tem dúvidas, deseja solicitar uma coleta ou quer
+                conhecer nossas soluções? Entre em contato com
+                nossa equipe.
             </p>
 
         </section>
 
-    </main>
+        <section class="contato-informacoes">
 
+            <div class="contato-card">
+
+                <span>📍</span>
+
+                <h2>Localização</h2>
+
+                <p>
+                    Pouso Alegre - MG<br>
+                    Área Industrial
+                </p>
+
+            </div>
+
+            <div class="contato-card">
+
+                <span>📞</span>
+
+                <h2>Telefone</h2>
+
+                <p>
+                    (35) 0000-0000
+                </p>
+
+            </div>
+
+
+            <div class="contato-card">
+
+                <span>✉️</span>
+
+                <h2>E-mail</h2>
+
+                <p>
+                    contato@ecotechrecicle.com
+                </p>
+
+            </div>
+
+
+            <div class="contato-card">
+
+                <span>🕐</span>
+
+                <h2>Atendimento</h2>
+
+                <p>
+                    Segunda a sexta<br>
+                    8h às 17h
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="contato-formulario">
+
+            <div class="formulario-texto">
+
+                <h2>Envie uma mensagem</h2>
+
+                <p>
+                    Preencha os campos abaixo e entre em contato
+                    com nossa equipe.
+                </p>
+
+            </div>
+
+
+            <form>
+
+                <label for="nome">
+                    Nome
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                >
+
+
+                <label for="email">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                >
+
+
+                <label for="assunto">
+                    Assunto
+                </label>
+
+                <select id="assunto" name="assunto">
+
+                    <option value="">
+                        Selecione uma opção
+                    </option>
+
+                    <option value="coleta">
+                        Solicitação de coleta
+                    </option>
+
+                    <option value="duvidas">
+                        Dúvidas
+                    </option>
+
+                    <option value="parcerias">
+                        Parcerias
+                    </option>
+
+                    <option value="empresas">
+                        Empresas
+                    </option>
+
+                    <option value="outros">
+                        Outros
+                    </option>
+
+                </select>
+
+
+                <label for="mensagem">
+                    Mensagem
+                </label>
+
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="6"
+                    placeholder="Digite sua mensagem"
+                ></textarea>
+
+
+                <button type="submit">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </section>
+
+        <section class="contato-final">
+
+            <h2>
+                ♻️ Tem um eletrônico sem uso?
+            </h2>
+
+            <p>
+                Dê a ele um destino melhor.
+            </p>
+
+            <a href="servicos.html">
+                Solicitar uma coleta →
+            </a>
+
+        </section>
+
+    </main>
 
     <footer>
 
@@ -57,4 +210,6 @@
 
     </footer>
 
+    <script src="script.js" defer></script>
+    
 </body>
